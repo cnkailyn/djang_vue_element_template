@@ -1,0 +1,13 @@
+sina_data:
+    build: .
+    container_name: sina_data
+    privileged: true
+    working_dir: /project
+    ports:
+        - "0.0.0.0:7030:8000"
+    volumes:
+        - "/projects/sina_data:/project"
+    restart: always
+    
+    cpuset: "0"
+    command: sh ./run.sh

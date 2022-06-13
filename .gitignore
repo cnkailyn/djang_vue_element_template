@@ -1,0 +1,9 @@
+.idea
+.vscode
+media
+*.pyc
+venv
+logs
+.env
+/static/temp
+/static/upload
