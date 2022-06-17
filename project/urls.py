@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
+from modules.module.views import api_example, page_example
+from django.views.static import serve
+from project import settings
 
 urlpatterns = [
-    path('api/counter', main.api_counter),
-    path('api/all-word-group', main.api_word_group),
+    path('', page_example),
+    path('api/example', api_example),
 
     path('admin/', admin.site.urls),
 

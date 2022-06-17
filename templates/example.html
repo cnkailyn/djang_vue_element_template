@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="/static/css/lib/element@2.15.9.css">
+</head>
+<body>
+<div id="app">
+    <el-button @click="visible = true">Button</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+        <p>Try Element</p>
+    </el-dialog>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="/static/js/lib/vue@2.6.14.min.js"></script>
+<script src="/static/js/lib/axios.js"></script>
+<!-- import JavaScript -->
+<script src="/static/js/lib/element@2.15.9.js"></script>
+<script src="/static/js/base.js"></script>
+<script src="/static/js/index.js"></script>
+</html>

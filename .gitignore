@@ -1,9 +1,10 @@
 .idea
-.vscode
-media
+media/*
 *.pyc
 venv
-logs
+logs/*
 .env
 /static/temp
 /static/upload
+!.gitkeep
+project/local_settings.py
