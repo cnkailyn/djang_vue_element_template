@@ -1,4 +1,4 @@
-let vueApp = new Vue({
+let app = new Vue({
     el: '#app',
     delimiters: ["${", "}"],
     data: {
